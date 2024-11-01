@@ -9,7 +9,7 @@ import type {
   BarberStats,
 } from "../types";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3002/api";
+const API_URL = process.env.REACT_APP_API_URL || "https://back-endbarber.onrender.com/api";
 
 async function handleResponse<T>(response: Response): Promise<T> {
   if (response.status === 204) {
